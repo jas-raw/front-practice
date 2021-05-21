@@ -43,11 +43,15 @@ function App() {
               <Switch>
                 <Route path='/administrador/'>
                     <Administrador
+                        getAlumnosTodos={getAlumnosTodos}
+                        listadoAlumnos={listadoAlumnos}
+                        patchNota={patchNota}
                         />
                 </Route>
 
                 <Route exact path='/'>
                     <Principal
+                        patchAutoevaluacion={patchAutoevaluacion}
                         />
                 </Route>
 
